@@ -1,0 +1,104 @@
+body
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-main-content {
+    padding: 40px 0;
+    background: radial-gradient(circle at center, #3a0000 0%, #000000 70%); 
+    min-height: calc(100vh - 150px); 
+    display: flex;
+    align-items: center; 
+}
+
+.about-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    align-items: flex-start; 
+}
+
+
+.about-text-content {
+    flex: 2; 
+    min-width: 300px; 
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.7); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-text-content h2, .about-text-content h3 {
+    color: #ffffff; 
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+.about-image-contact-wrapper {
+    flex: 1; 
+    min-width: 280px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: center; 
+}
+
+
+.about-image-container {
+    width: 100%; 
+    max-width: 200px; 
+    height: 100%;
+    max-height: 200px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 5px solid #ff0000; 
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); 
+}
+
+.about-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+.contact-me-section {
+    width: 100%;
+    max-width: 350px; 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.contact-me-section h3 {
+    color: #ff0000;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.social-links a {
+    color: #f0f0f0; 
+    font-size: 35px; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); 
+}
+
+.social-links .fa-instagram:hover { color: #E1306C; }
+.social-links .fa-tiktok:hover { color: #69C9D0; }
+.social-links .fa-whatsapp:hover { color: #25D366; }
+.social-links .fa-github:hover { color: #6e5494; }

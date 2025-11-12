@@ -1,0 +1,38 @@
+.objective {
+    font-family: 'Arial', sans-serif;
+    color: #070707;
+    line-height: 1.6;
+    margin: 50px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    height: 300px;
+    padding: 15px;
+    background: linear-gradient(to right, #e70303, #c4b8b8);
+    border-radius: 20px;
+    width: 75%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 160px;
+    
+}
+.objective img {
+   border-radius: 100%;
+   width: 150px;
+   height: 150px;
+   margin-left: 180px;
+   object-fit: cover;
+   margin-left: 450px;
+
+
+}
+.quote {
+    font-style: italic;
+    color: #111010;
+    margin: 15px 0;
+    text-align: justify;
+    padding-left: 10px;
+    border-left: 3px solid #cccccc;
+    margin-left: 200px;
+}
+.quote p {
+    text-align: justify;
+}

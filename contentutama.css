@@ -1,0 +1,97 @@
+.card-puisi {
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(190, 9, 9);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 150px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 30px;
+  transition: transform 0.3s ease;
+  
+}
+.card-puisi:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(240, 45, 45, 0.5);
+}
+.card-puisi h2 {
+    font-size: 16px;
+    color: #fcf7f7;
+    margin: 10px 0;
+    font-family: 'poppins', sans-serif;
+}
+.card-puisi p {
+    text-align: left;
+}
+.card-puisi a {
+    text-decoration: none;
+    color: black;
+}
+.card-puisi img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup:target {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  animation: scaleIn 0.3s ease;
+}
+.popup-content img {
+  width: 200px;
+
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  text-decoration: none;
+  color: #555;
+}
+.close:hover {
+  color: red;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.popup-content p {
+  text-align: left;
+  font-family: 'Garamond',;
+  
+}
+.popup-content h2 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
