@@ -96,4 +96,78 @@
   margin-bottom: 10px;
 
 }
+/* --- 1. DEFAULT STYLE (MOBILE FIRST - HP) --- */
+/* Aturan ini berlaku untuk semua layar, terutama layar HP (lebar maks. 600px) */
+
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.container {
+    width: 100%; /* Kontainer penuh di HP */
+    margin: 0 auto;
+}
+
+.kolom {
+    width: 100%; /* Semua elemen kolom stack (tumpuk) di HP */
+    margin-bottom: 15px;
+}
+
+.nav-menu a {
+    display: block; /* Menu navigasi menjadi tombol blok penuh */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* --- 2. MEDIA QUERY UNTUK TABLET (Portrait & Sebagian Laptop Kecil) --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .kolom {
+        /* Contoh: Membuat dua kolom bersebelahan */
+        width: 48%; 
+        display: inline-block;
+        margin-right: 2%; /* Jarak antar kolom */
+    }
+
+    .nav-menu {
+        display: flex; /* Menu navigasi menjadi baris horizontal */
+        justify-content: space-around;
+    }
+    .nav-menu a {
+        display: inline;
+        border-bottom: none;
+    }
+}
+
+/* --- 3. MEDIA QUERY UNTUK KOMPUTER / LAPTOP DESKTOP (Layar Besar) --- */
+@media (min-width: 1025px) {
+    
+    .container {
+        max-width: 1200px; /* Batasi lebar kontainer di layar besar */
+    }
+
+    .kolom {
+        /* Contoh: Membuat tiga kolom bersebelahan */
+        width: 32%; 
+        display: inline-block;
+        margin-right: 1.33%; 
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    /* Footer di layar besar */
+    .footer {
+        padding: 20px 0;
+        text-align: right;
+    }
+}
 
